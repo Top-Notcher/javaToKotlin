@@ -1,4 +1,4 @@
-package com.lannstark.lec10.Java;
+package com.lannstark.lec10.java;
 
 public final class JavaPenguin extends JavaAnimal implements JavaSwimable, JavaFlyable {
 
