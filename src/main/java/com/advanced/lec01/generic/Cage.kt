@@ -1,7 +1,5 @@
 package com.advanced.lec01.generic
 
-import com.lannstark.lec11.Car
-
 
 fun main() {
     /**
