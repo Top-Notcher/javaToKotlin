@@ -20,10 +20,17 @@ abstract class Bird(
 class Sparrow : Bird("참새", 100)
 class Eagle : Bird("독수리", 500)
 
-//class Cage5<T : Animal> {
+
+/** 단일 제네릭 제약
+ */
+//class Cage5<T : Animal> { ... }
+
+/** 복수 제네릭 제약
+ */
 class Cage5<T> (
     private val animals: MutableList<T> = mutableListOf()
 ) where T : Animal, T : Comparable<T> {
+
     fun printAfterSorting() {
         this.animals.sorted()
             .map { it.name }
@@ -47,7 +54,11 @@ class Cage5<T> (
     }
 }
 
-// 두 리스트의 겹치는 값 여부 확장함수
+/** 두 리스트의 겹치는 값 여부 확장함수
+ * - 제네릭의 활용
+ * - List<Int> 이건 List<String> 이건 모든 List에 대해 활용 가능하다.
+ */
+
 fun <T> List<T>.hasIntersection(other: List<T>): Boolean {
     return (this.toSet() intersect other.toSet()).isNotEmpty()
 }
