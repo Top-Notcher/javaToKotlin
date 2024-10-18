@@ -1,5 +1,7 @@
 package com.advanced.lec04
 
+/** 오직 소비(넣기)만 하고 있다.
+ */
 class Cage4<in T> {
     private val animals: MutableList<T> = mutableListOf()
 
