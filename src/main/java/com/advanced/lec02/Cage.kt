@@ -1,7 +1,7 @@
 package com.advanced.lec02
 
 
-fun main() {
+fun example02() {
     /**
      * example02
      */
@@ -9,9 +9,9 @@ fun main() {
     goldFishCage.put(GoldFish("금붕어"))
 
     val fishCage = Cage2<Fish>()
-//    fishCage.moveFrom(goldFishCage) // Type Mismatch
 
-    val first: Fish = fishCage.getFirst()
+    // 1. Type Mismatch -> 컴파일 에러
+//    fishCage.moveFrom(goldFishCage)
 }
 
 class Cage2<T> {
