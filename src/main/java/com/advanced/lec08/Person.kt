@@ -49,7 +49,7 @@ class Person4 {
 }
 
 class Person5 {
-    /** solution01
+    /** solution01 : backing property
      * - name이 사용되는 경우에만 _name을 초기화하여 Thread.sleep()은 꼭 필요할 때 1회만 호출된다.
      * - 코드 양이 많아진다는 단점이 명확히 존재
      */
